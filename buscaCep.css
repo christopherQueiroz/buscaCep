@@ -1,0 +1,57 @@
+
+div#buscaCep{
+    position: absolute;
+	border: 1px solid rgba(0,0,0,.5);
+	background-color: #dddddd;
+	width: 620px;
+	height: 220px;
+	padding: 10px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	border-radius: 5px;
+   /* left: 70%; */
+}
+
+#endereco {
+
+	font-family: "arial", sans-serif;
+	font-size: 12px;
+	background-color: white;
+	background: url("icone-endereco.png") no-repeat 90% 90%;
+	color: rgba(0,0,0,.9);
+	margin: 10px;
+	text-align: justify;
+	border-radius: 5px;
+	border: 1px solid #888888;
+	
+}
+
+#endereco legend{
+
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#endereco input{
+
+	background-color: rgba(255,255,255,.5);
+	transition: background-color 1s;
+}
+
+#endereco label{
+
+	transition: color 1s;
+	transition: font-weight 1s;
+}
+
+
+#endereco input:hover{
+ background-color: #dddddd;
+}
+
+#endereco label:hover {
+
+	color: #000000;
+	font-weight: bold;
+
+}
+

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+
+<meta charset="utf-8">
+
+<title>Primeiro Código</title>
+
+<link rel="stylesheet" type="text/css" href="buscaCep.css">
+
+</head>
+
+
+<body>
+
+
+
+<div id = "buscaCep">
+
+
+<form method="post" id="frmBuscaCep">
+
+
+<fieldset id="endereco">
+      <legend>Endereço</legend>
+
+      <p><label for="cLog"> Logradouro: <input type="text" name="tLog" id="cLog" size="40" maxLength="100" placeHolder="Rua / Av. / Al."></label>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <label for="cNum">  Número: <input type="number" name="tNum" id="cNum" min="0" max="9999999"></label></p>
+
+     <p> <label for ="cBairro"> Bairro: <input type="text" name="tBairro" id="cBairro" size = "30" maxLength = "50" placeholder = "Bairro"></label></P>
+
+     <p> <label for="cUF">   Estado:</label>
+
+            <select name="tUF" id="cUF">
+
+
+                <optgroup label="Norte">
+                    <option>AM</option>
+                    <option>RR</option>
+                    <option>AP</option>
+                    <option>PA</option>
+                    <option>TO</option>
+                    <option>RO</option>
+                    <option>AC</option>
+                </optgroup>
+
+
+            	<optgroup label="Nordeste">
+                    <option>MA</option>
+                    <option>PI</option>
+                    <option>CE</option>
+                    <option>RN</option>
+                    <option>PE</option>
+                    <option>PB</option>
+                    <option>SE</option>
+                    <option>AL</option>
+                    <option>BA</option>
+                </optgroup>
+
+            	<optgroup label="Centro-Oeste">
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>GO</option>>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option selected>SP</option>
+                    <option>RJ</option>
+                    <option>ES</option>
+                    <option>MG</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option>PR</option>
+                    <option>RS</option>
+                    <option>SC</option>  
+                </optgroup>
+
+            </select> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+      <label for="cCid">  Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxLength="30" placeholder="Sua cidade" list="cidades">
+             <datalist id="cidades">
+                <option>São Paulo</option>
+                <option>São Bernardo do Campo</option>
+                <option>São Caetano</option>
+                <option>Santo André</option>
+                <option>Osasco</option>
+                <option>Guarulhos</option>
+                <option>Novo Hamburgo</option>
+                <option>Vitória</option>
+                <option>Rio de Janeiro</option>
+                <option>Santiago</option>
+                <option>Bumenau</option>
+                <option>Curitiba</option>
+            <datalist>
+      </p>
+
+
+       <p><label for="cCep">  CEP: <input type="text" name="tCep" id="cCep" size="8" maxLength="8" placeholder="CEP"></label></p>
+
+      <input type="submit">
+      
+</fieldset>
+
+
+
+
+</div>
+
+
+<script src="buscaCep_.js"></script>
+</body>
+
+</html>
